@@ -84,11 +84,14 @@ source $ZSH/oh-my-zsh.sh
 # ZSH aliases
 alias reload='. ~/.zshrc'
 alias a='ratom'
-alias update='npm update -g && apm update --no-confirm && upgrade_oh_my_zsh'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo aptitude update && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
+alias zshconfig='a ~/.zshrc'
+alias gitconfig='a ~/Documents/Dev/Git/.gitconfig'
+
 #misc commands
 alias l='ls -lhG'
-alias tmm='sudo fs_usage -f -R filesys backupd'
+
 alias wds='webpack-dev-server --progress --colors'
 
 alias backupgit="cd ~/Config/Git && ./backup.sh"
