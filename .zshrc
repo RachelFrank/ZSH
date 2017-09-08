@@ -84,10 +84,15 @@ source $ZSH/oh-my-zsh.sh
 # ZSH aliases
 alias reload='. ~/.zshrc'
 alias a='ratom'
-alias update='sudo apt-get update && sudo apt-get dist-upgrade && sudo aptitude update && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 alias zshconfig='a ~/.zshrc'
 alias gitconfig='a ~/Documents/Dev/Git/.gitconfig'
+
+# Apt-get Aliases
+alias update='sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove -y && sudo aptitude update && upgrade_oh_my_zsh'
+alias agi='sudo apt-get install -y'
+alias agr='sudo apt-get remove -y'
+alias ags='apt-cache search'
 
 #misc commands
 alias l='ls -lhG'
