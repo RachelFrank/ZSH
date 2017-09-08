@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ubuntu textmate colorize colored-man-pages extract docker gulp history z zsh-syntax-highlighting)
+plugins=(git ubuntu atom colorize colored-man-pages extract docker gulp history z zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # ZSH aliases
 alias reload='. ~/.zshrc'
 alias a='ratom'
-alias update='sudo apt-get update && sudo apt-get upgrade && sudo aptitude update && upgrade_oh_my_zsh'
+alias update='sudo apt-get update && sudo apt-get dist-upgrade && sudo aptitude update && upgrade_oh_my_zsh'
 alias theme='a ~/.oh-my-zsh/themes/puddletown.zsh-theme'
 alias zshconfig='a ~/.zshrc'
 alias gitconfig='a ~/Documents/Dev/Git/.gitconfig'
@@ -117,34 +117,3 @@ alias -g P="2>&1| pygmentize -l pytb"
 
 # alias ug="ungit --port=8081"
 
-#Git Aliases
-# alias ga="git add"
-# alias gac="git commit -am"
-# alias gb="git branch"
-# alias gbd="git branch -d"
-# alias gbdr="git push origin --delete new"
-# alias gbD="git branch -D"
-# alias gbv="git branch -v"
-# alias gc="git commit -m"
-# alias gac="git commit -ma"
-# alias gch="git checkout"
-# alias gchb="git checkout branch"
-# alias gchh="git checkout head"
-# alias gcl="git clone"
-# alias gd="git diff"
-# alias gds="git diff --staged"
-# alias gi="git init"
-# alias gib="git init --bare"
-# alias gl="git log --graph --pretty=format:'%Cblue%h%Creset %Cred(%cr) %C(bold blue)%an%C(yellow)%d %Creset %s' --abbrev-commit"
-# alias gm="git mergetool --tool=emerge"
-# alias gpush="git push origin master"
-# alias gpull="git pull origin master"
-# alias gpulla="git pull --all"
-# alias gr="git revert"
-# alias grh="git revert HEAD"
-# alias gre="git reset"
-# alias gs="git status"
-# alias gst="git stash"
-# alias gsta="git stash apply"
-# alias gstl="git stash list"
-# alias gstp="git stash pop"
