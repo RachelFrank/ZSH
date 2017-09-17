@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+TERM=xterm # fixes bizarre character prompt issues
+
 eval $(thefuck --alias)
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -8,6 +10,7 @@ export ZSH=~/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="puddletown"
+# ZSH_THEME="jonathan"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -122,3 +125,4 @@ alias -g P="2>&1| pygmentize -l pytb"
 
 # alias ug="ungit --port=8081"
 
+export LC_ALL=en_US.UTF-8
